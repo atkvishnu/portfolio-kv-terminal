@@ -6,7 +6,8 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'off',
         'prettier/prettier': [
             'warn'
-        ]
+        ],
+        "indent": 4,
+        "useTabs": 0,
     },
-
 };

@@ -10,7 +10,7 @@ const ascii_name = `
 █████╔╝ ██║   ██║██╔████╔██║███████║██████╔╝    ██║   ██║██║███████╗███████║██╔██╗ ██║██║   ██║
 ██╔═██╗ ██║   ██║██║╚██╔╝██║██╔══██║██╔══██╗    ╚██╗ ██╔╝██║╚════██║██╔══██║██║╚██╗██║██║   ██║
 ██║  ██╗╚██████╔╝██║ ╚═╝ ██║██║  ██║██║  ██║     ╚████╔╝ ██║███████║██║  ██║██║ ╚████║╚██████╔╝
-╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝      ╚═══╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝      ╚═══╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  v${config.version}
 `;
 
 // Help
@@ -27,7 +27,7 @@ export const help = async (args: string[]): Promise<string> => {
   return `Welcome! Here are all the available commands:
 \n${c}\n
 [tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
+[ctrl+l]/clear/cls/cl/c: clear terminal.\n
 Type 'sumfetch' to display summary.
 `;
 };
@@ -120,7 +120,7 @@ directories`;
 
 export const cd = async (args: string[]): Promise<string> => {
   return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+if you want to help, you can contribute to this repo.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
