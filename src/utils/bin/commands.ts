@@ -2,6 +2,16 @@
 
 import * as bin from './index';
 import config from '../../../config.json';
+import Avatar from '../../assets/Avatar.png';
+
+const ascii_name = `
+██╗  ██╗██╗   ██╗███╗   ███╗ █████╗ ██████╗     ██╗   ██╗██╗███████╗██╗  ██╗███╗   ██╗██╗   ██╗
+██║ ██╔╝██║   ██║████╗ ████║██╔══██╗██╔══██╗    ██║   ██║██║██╔════╝██║  ██║████╗  ██║██║   ██║
+█████╔╝ ██║   ██║██╔████╔██║███████║██████╔╝    ██║   ██║██║███████╗███████║██╔██╗ ██║██║   ██║
+██╔═██╗ ██║   ██║██║╚██╔╝██║██╔══██║██╔══██╗    ╚██╗ ██╔╝██║╚════██║██╔══██║██║╚██╗██║██║   ██║
+██║  ██╗╚██████╔╝██║ ╚═╝ ██║██║  ██║██║  ██║     ╚████╔╝ ██║███████║██║  ██║██║ ╚████║╚██████╔╝
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝      ╚═══╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+`;
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
@@ -141,15 +151,13 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
 
+  <div style="display:inline-flex; gap:70px ;align-items:center;">
+  <img style="padding-top: 40px; margin-right: -2em; border-radius: 9999px;" src=${Avatar.src} width="180" alt="DevProfilePicture" /><br/><br/><br/><br/>
+
+  ${ascii_name}                                                                                       
+  </div>
+                                                                                                      
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.

@@ -13,6 +13,7 @@ export const getReadme = async () => {
   return data;
 };
 
+
 export const getWeather = async (city: string) => {
   try {
     const { data } = await axios.get(`https://wttr.in/${city}?ATm`);

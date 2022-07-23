@@ -1,20 +1,20 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/atkvishnu/atkvishnu/master/README-liveterm.md",
+  "title": "Kumar Vishnu",
+  "name": "Kumar Vishnu",
+  "ascii": "Kumar Vishnu",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "atkvishnu",
+    "linkedin": "atkvishnu/"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "work.kumarvishnu@gmail.com",
+  "ps1_hostname": "linux",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "repo": "https://github.com/atkvishnu/atkvishnu",
+  "resume_url": "https://bit.ly/3b4k42Y",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "paypal": "https://www.memecreator.org/static/images/memes/4778746.jpg",
+    "patreon": "https://www.memecreator.org/static/images/memes/4778746.jpg"
   },
   "colors": {
     "light": {
